@@ -266,7 +266,7 @@ remove_account() ->
 
 iq_result(Request) ->
     ToAttr = case exml_query:attr(Request, <<"from">>) of
-                 undefiend ->
+                 undefined ->
                      [];
                  Jid ->
                      [{<<"to">>, Jid}]
